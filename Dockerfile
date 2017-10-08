@@ -14,4 +14,5 @@ RUN cd /temp/solr-magento && cp -f * /opt/solr/example/solr/conf/
 # Run Apache Solr
 WORKDIR /opt/solr/example
 EXPOSE 8983
+VOLUME /opt/solr/example/solr/data
 CMD ["/usr/bin/java","-jar","start.jar"]
